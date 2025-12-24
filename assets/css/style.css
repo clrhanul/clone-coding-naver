@@ -1,0 +1,101 @@
+/** 내 스타일에 맞게 HTML 태그 조정 **/
+/* 모든 태그의 기본 스타일 조정 */
+* {
+    margin: 0; padding: 0; border: 0;
+    background-color: transparent;
+}
+
+/* 루트 컨테이너 설정 */
+html {
+    width: 100%; height: 100%;
+    font-family: "Noto Sans KR";
+}
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#root {
+    display: flex;
+    position: relative;
+    width: 1280px;
+    min-height: 700px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 52px; /* header height */
+}
+
+/* 링크 데코레이션 제거 */
+a {
+    color: black;
+    text-decoration-line: none;
+}
+
+/* 템플릿 설정 */
+div.flex-v, div.flex-h {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+div.flex-h { flex-direction: column; }
+.w-100 { width: 100%; }
+/** --- **/
+
+
+/** 좌상 로고 **/
+#main-logo {
+    display: block; position: absolute;
+    width: fit-content; height: fit-content;
+    left: 0; top: 0;
+    transform: scale(0.5);
+}
+#main-logo > img { position: absolute; }
+/** --- **/
+
+
+/** 검색창 **/
+#search-box {
+    display: flex;
+    width: 638px;
+    border: 1px solid var(--event-color);
+    border-radius: 100px;
+    padding: 17px 27px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+#search-input {
+    flex: 1; height: calc(100% + 14px);
+    font-size: 17px;
+    font-weight: 900;
+}
+#display-v-keyboard {
+    background-image: url('../images/icon_set_default.png');
+    width: 28px; height: 15px;
+    background-size: 477px 470px;
+    background-position: -277px -287px;
+    margin-right: 10px;
+}
+#open-search-history {
+    background-image: url('../images/icon_set_default.png');
+    width: 10px; height: 8px;
+    background-size: 470px 470px;
+    background-position: -460px -421px;
+    margin-right: 14px;
+}
+#search-button {
+    background-image: url('../images/icon_set_default.png');
+    width: 24px; height: 24px;
+    background-size: 470px 470px;
+    background-position: -346px -20px;
+    filter: hue-rotate(235deg);
+}
+/** --- **/
+
+
+/** 메인 컨텐츠 **/
+.main-box {
+    padding: 5px;
+    border: 10px;
+}
+/** --- **/

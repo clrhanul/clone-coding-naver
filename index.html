@@ -4,8 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVER</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/colormap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="stylesheet" href="assets/css/z-index.css">
 </head>
 <body>
-    
+    <div id="root">
+        <!-- 상단 버튼 -->
+        <header>
+            <div>
+                <a href="#"><div class="header-item" id="header-menu"></div></a>
+                <a href="#"><div class="header-item" id="header-n-pay"></div></a>
+            </div>
+            <div>
+                <a href="#"><div class="header-item" id="header-noti"></div></a>
+                <a href="#"><div class="header-item" id="header-shop"><span id="shop-noti-count">4</span></div></a>
+            </div>
+        </header>
+        
+        <!-- 검색창 왼쪽 로고 이미지 -->
+        <a href="#"><div id="main-logo"><img src="./assets/images/main_logo.gif" alt=""></div></a>
+
+        <!-- 검색창 -->
+        <div id="search-box">
+            <input id="search-input" type="text">
+            <a href="#"><div id="display-v-keyboard"></div></a>
+            <a href="#"><div id="open-search-history"></div></a>
+            <a href="#"><div id="search-button"></div></a>
+        </div>
+
+        <!-- 검색창 아래 네비게이션 -->
+        <nav>
+            <a href="#"><div class="nav-item" id="nav-mail">
+                <div class="nav-item-img"></div>
+                <p class="nav-item-text">메일</p>
+            </div></a>
+            <a href="#"><div class="nav-item" id="nav-cafe">
+                <div class="nav-item-img"></div>
+                <p class="nav-item-text">카페</p>
+            </div></a>
+            <a href="#"><div class="nav-item" id="nav-blog">
+                <div class="nav-item-img"></div>
+                <p class="nav-item-text">블로그</p>
+            </div></a>
+            <a href="#"><div class="nav-item" id="nav-store">
+                <div class="nav-item-img"></div>
+                <p class="nav-item-text">스토어</p>
+            </div></a>
+            <a href="#"><div class="nav-item" id="nav-news">
+                <div class="nav-item-img"></div>
+                <p class="nav-item-text">뉴스</p>
+            </div></a>
+            <a href="#"><div class="nav-item" id="nav-stock">
+                <div class="nav-item-img"></div>
+                <p class="nav-item-text">증권</p>
+            </div></a>
+            <a href="#"><div class="nav-item" id="nav-land">
+                <div class="nav-item-img"></div>
+                <p class="nav-item-text">부동산</p>
+            </div></a>
+            <a href="#"><div class="nav-item" id="nav-maps">
+                <div class="nav-item-img"></div>
+                <p class="nav-item-text">지도</p>
+            </div></a>
+            <a href="#"><div class="nav-item" id="nav-webtoon">
+                <div class="nav-item-img"></div>
+                <p class="nav-item-text">웹툰</p>
+            </div></a>
+            <a href="#"><div class="nav-item" id="nav-chzzk">
+                <div class="nav-item-img"></div>
+                <p class="nav-item-text">치지직</p>
+            </div></a>
+            <a href="#"><div class="nav-item" id="nav-others">
+                <div class="nav-item-img"></div>
+                <p class="nav-item-text">&nbsp;</p>
+            </div></a>
+        </nav>
+
+        <!-- 메인 컨텐츠 -->
+        <main>
+            <!-- 중앙 컨텐츠 -->
+            <main>
+                <section class="main-ad"></section>
+                <section class="news-table"></section>
+                <section class="shopping"></section>
+                <section class="articles"></section>
+            </main>
+
+            <!-- 사이드 바 -->
+            <aside>
+                <section class="user-profile-card"></section>
+                <section class="side-ad first"></section>
+                <section class="side-ad second"></section>
+                <section class=""></section>
+                <section class=""></section>
+                <section class=""></section>
+                <section class=""></section>
+                <section class=""></section>
+                <section class=""></section>
+            </aside>
+        </main>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+    <div class="flex-h" id="footer">
+        <div id="footer-ad"></div>
+        <hr>
+        <div class="flex-v w-100" style="justify-content: space-between;">
+            <a href="#"><b>공지사항</b></a>
+            <a href="#"><b>서비스 전체보기 〉</b></a>
+        </div>
+
+        <hr>
+        <div class="flex-v w-100" style="justify-content: space-between;">
+            <div class="flex-v" style="justify-content: space-between; gap: 20px;">
+                <b><div class="flex-h" style="align-items: start;">
+                    <p>Partners</p>
+                    <p>Developers</p>
+                </div></b>
+                <div class="flex-h" style="align-items: start;">
+                    <div class="flex-v" style="gap: 10px;">
+                        <a href="#">프로젝트 꽃</a>|<a href="#">네이버 비즈니스</a>|
+                        <a href="#">네이버 비즈니스 스쿨</a>|<a href="#">네이버 광고 등록</a>|
+                        <a href="#">스토어 개설</a>|<a href="#">지역업체 등록</a>|
+                        <a href="#">엑스퍼트 등록</a>
+                    </div>
+                    <div class="flex-v" style="gap: 5px;">
+                        <a href="#">네이버 개발자 센터</a>|<a href="#">오픈 API</a>|
+                        <a href="#">오픈소스</a>|<a href="#">네이버 D2</a>|
+                        <a href="#">네이버 D2SF</a>|<a href="#">네이버 랩스</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-v" style="gap: 40px;">
+                <div class="flex-v" style="gap: 10px;">
+                    <div class="flex-h" style="align-items: start;">
+                        <b>웨일 브라우저</b>
+                        <a href="#" style="color: gray;">이용안내</a>
+                    </div>
+                    <img src="assets/images/whale_icon.png" height="45" alt="">
+                </div>
+                <div class="flex-v" style="gap: 10px;">
+                    <div class="flex-h" style="align-items: start;">
+                        <b>기업 사이트</b>
+                        <a href="#" style="color: gray;">바로가기</a>
+                    </div>
+                    <img src="assets/images/corp_icon.png" height="45" alt="">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="flex-v" style="gap: 10px;">
+            <a href="#">회사소개</a>|<a href="#">인재채용</a>|
+            <a href="#">제휴제안</a>|<a href="#">이용약관</a>|
+            <a href="#"><b>개인정보처리방침</b></a>|<a href="#">청소년보호정책</a>|
+            <a href="#">네이버 정책</a>|<a href="#">고객센터</a><a href="#"><b>ⓒ NAVER Corp.</b></a>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>

@@ -57,9 +57,11 @@ div.flex-h { flex-direction: column; }
     display: block; position: absolute;
     width: fit-content; height: fit-content;
     left: 0; top: 0;
-    transform: scale(0.5);
+    transform: scale(0.5) translate(-50%, -50%);
+    background-image: url('../images/main_logo.gif');
+    background-repeat: no-repeat;
+    width: 550px; height: 280px;
 }
-#main-logo > img { position: absolute; }
 /** --- **/
 
 

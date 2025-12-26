@@ -19,16 +19,20 @@ body {
     display: flex;
     position: relative;
     width: 1280px;
-    min-height: 700px;
+    min-height: 900px;
     flex-direction: column;
     align-items: center;
     padding-top: 52px; /* header height */
 }
 
-/* 링크 데코레이션 제거 */
+/* 기본 스타일 조정 */
 a {
+    display: block;
     color: black;
     text-decoration-line: none;
+}
+img {
+    width: 100%;
 }
 
 /* 템플릿 설정 */
@@ -40,6 +44,11 @@ div.flex-v, div.flex-h {
 }
 div.flex-h { flex-direction: column; }
 .w-100 { width: 100%; }
+.white-box {
+    border: 1px solid rgb(235, 234, 234);
+    border-radius: 10px;
+    padding: 10px;
+}
 /** --- **/
 
 
@@ -94,8 +103,68 @@ div.flex-h { flex-direction: column; }
 
 
 /** 메인 컨텐츠 **/
+main {
+    display: flex;
+    width: 1280px;
+    gap: 20px;
+}
 .main-box {
+    display: flex;
+    width: 60%;
     padding: 5px;
     border: 10px;
+    flex: 2;
+    flex-direction: column;
+    gap: 15px;
+}
+aside {
+    width: 30%;
+    flex: 1;
+}
+.main-ad { 
+    width: 100%;
+}
+.main-ad > a {
+    display: block;
+    width: 100%;
+}
+.main-ad > a > img {
+    border-radius: 10px;
 }
 /** --- **/
+
+#block-menu-wrapper {
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 0;
+}
+#block-menu {
+    gap: 10px;
+    color: lightgray;
+}
+#block-menu > a {
+    color: gray;
+}
+#block-menu > a.select {
+    color: black;
+    font-weight: bold;
+}
+
+.left-button, .right-button {
+    display: flex;
+    width: 40px; height: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+}
+.left-button > div.img, .right-button > div.img {
+    width: 10px; height: 10px;
+    background-image: url('../images/icon_set_default.png');
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: -389px -190px;
+}
+.left-button > div.img {
+    transform: rotate(180deg);
+}

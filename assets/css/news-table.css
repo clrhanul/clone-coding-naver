@@ -36,3 +36,24 @@
     justify-content: space-between;
     padding: 15px;
 }
+#news-view-style {
+    position: absolute;
+    right: 5px;
+    gap: 20px;
+}
+#news-view-style > a {
+    width: 20px; height: 20px;
+}
+#news-view-style > a > div.img {
+    display: block;
+    width: 25px; height: 25px;
+    background-image: url("../images/icon_set_default.png");
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+}
+#news-view-style > .list-view > div.img {
+    background-position: -278px -488.4px;
+}
+#news-view-style > .grid-view > div.img {
+    background-position: -315px -524px;
+}

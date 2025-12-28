@@ -111,7 +111,7 @@
                     </div>
                     <div class="flex-v" id="news-headline">
                         <div class="flex-v">
-                            <a href="#">전체언론사</a><div class="img"></div> |
+                            <a href="#">전체언론사 <span style="font-size: 10px;">▼</span></a> |
                             <a href="#">연합뉴스</a> ·
                             <a href="#">대통령 상징 '봉황기' 29일 0시 용산서 내리고 청와대에 걸...</a>
                         </div>
@@ -146,16 +146,16 @@
                         <a><div href="#" style='--s: url("../../assets/images/news23.png");'></div></a>
                         <a><div href="#" style='--s: url("../../assets/images/news24.png");'></div></a>
                     </div>
-                    <div class="flex-v">
-                        <div></div>
+                    <div style="border: 1px solid var(--border-color); margin: 0;"></div>
+                    <div class="flex-v" style="margin: 10px 20px; position: relative;">
                         <div class="flex-v" style="gap: 15px;">
                             <a href="#" class="left-button"><div class="img"></div></a>
                             <p><b style="color: rgb(44, 110, 233);">언론사</b> 더보기 1/4</p>
                             <a href="#" class="right-button"><div class="img"></div></a>
                         </div>
-                        <div class="flex-v">
-                            <a href="#"><img src="" alt=""></a>
-                            <a href="#"><img src="" alt=""></a>
+                        <div class="flex-v" id="news-view-style">
+                            <a href="#" class="list-view"><div class="img"></div></a>
+                            <a href="#" class="grid-view"><div class="img"></div></a>
                         </div>
                     </div>
                 </section>
@@ -169,11 +169,102 @@
                             <a href="#">MY추천</a> /
                             <a href="#">쇼핑라이브</a>
                         </div>
-                        <div>
+                        <div class="flex-v">
                             <p><span style="color: black;">1</span>/6</p>
                             <a href="#"><img src="" alt=""></a>
                             <a href="#"><img src="" alt=""></a>
                         </div> 
+                    </div>
+                    <div class="shopping-table">
+                        <div class="flex-v">
+                            <div id="shop-list">
+                                <div class="shop-list">
+                                    <div class="flex-v">
+                                        <a href="#">쿠팡</a>&nbsp;·
+                                        <a href="#">G마켓</a>&nbsp;·
+                                        <a href="#">옥션</a>
+                                    </div>
+                                    <div class="flex-v">
+                                        <a href="#">올리브영</a>&nbsp;·
+                                        <a href="#">11번가</a>
+                                    </div>
+                                    <div class="flex-v">
+                                        <a href="#">SSG닷컴</a>&nbsp;·
+                                        <a href="#">GS&nbsp;SHOP</a>
+                                    </div>
+                                    <div class="flex-v">
+                                        <a href="#">하프클럽</a>&nbsp;·
+                                        <a href="#">CJ온스타일</a>
+                                    </div>
+                                    <div class="flex-v">
+                                        <a href="#">패션플러스</a>&nbsp;·
+                                        <a href="#">이마트몰</a>
+                                    </div>
+                                </div>
+                                <div class="flex-v shopping-my">
+                                    <p>주문</p>
+                                    <div style="background: gray;">0</div> |
+                                    <p>장바구니</p>
+                                    <div>4</div>
+                                </div>
+                            </div>
+                            <div class="flex-v">
+                                <div class="shop-item">
+                                    <img src="./assets/images/shop_item1.jpg" alt="">
+                                    <p>운동하는 남자 필수 이걸로 샤워하면 달라</p>
+                                </div>
+                                <div class="shop-item">
+                                    <img src="./assets/images/shop_item2.jpg" alt="">
+                                    <p>악취 진짜 잘 잡아요! 탈취제 50% 할인중</p>
+                                </div>
+                                <div class="shop-item">
+                                    <img src="./assets/images/shop_item3.jpg" alt="">
+                                    <p>옆자리 김대리가 자꾸 빌려가요~</p>
+                                </div>
+                                <div class="shop-item">
+                                    <img src="./assets/images/shop_item4.jpg" alt="">
+                                    <p>포근한데 맞춤 핏! 젝시믹스MEN슬랙스</p>
+                                </div>
+                            </div>
+                            <div id="shopping-side">
+                                <img src="./assets/images/shop_item_side.jpg" alt="">
+                                <div class="flex-v"><b>지금이 득템 찬스!</b></div>
+                            </div>
+                            <div class="flex-v" style="display: block;">
+                                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px;">
+                                    <div class="shop-item">
+                                        <img src="./assets/images/shop_item5.jpg" alt="">
+                                        <p>파크랜드몰 다운점퍼 초특가 6만원!</p>
+                                    </div>
+                                    <div class="shop-item">
+                                        <img src="./assets/images/shop_item6.jpg" alt="">
+                                        <p>1+1 남자 올인원 오늘사면 하나 더~</p>
+                                    </div>
+                                    <div class="shop-item">
+                                        <img src="./assets/images/shop_item7.jpg" alt="">
+                                        <p>엔진에 주는 비타민! 연료첨가제파격특가</p>
+                                    </div>
+                                    <div class="shop-item">
+                                        <img src="./assets/images/shop_item8.jpg" alt="">
+                                        <p>예민피부용 SLEEK 올해마지막 연말행사!</p>
+                                    </div>
+                                </div>
+                                <div id="shopping-bottom" style="font-size: 15px;">
+                                    <b>오늘의 혜택</b> · <div style='display: inline-block; width: 120px; height: 15px; background-image: url("./assets/images/today_reward.jpg"); background-size: contain;'></div>올 한 해 사랑받은 BEST 남성템 <span style="color: rgb(175, 113, 245);">최대 38% 할인, 1+1</span> 기획!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border: 1px solid var(--border-color); margin: 0;"></div>
+                    <div class="flex-v" style="margin: 10px 20px; position: relative;">
+                        <div class="flex-v" style="gap: 15px;">
+                            <a href="#" class="left-button"><div class="img"></div></a>
+                            <p><b style="color: rgb(175, 113, 245);">맨즈아이템</b> 더보기 1/4</p>
+                            <a href="#" class="right-button"><div class="img"></div></a>
+                        </div>
+                        <div class="flex-v" id="news-view-style">
+                            <img src="./assets/images/tag_ad1.svg" alt="">
+                        </div>
                     </div>
                 </section>
                 <section class="articles white-box">

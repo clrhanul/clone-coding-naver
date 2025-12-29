@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="assets/css/side-bar.css">
     <link rel="stylesheet" href="assets/css/widget-board.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
 
     <link rel="stylesheet" href="assets/css/z-index.css">
 </head>
@@ -414,12 +415,41 @@
 
             <!-- 사이드 바 -->
             <aside>
-                <section class="user-profile-card white-box">
-                    맑은한울님 | 네이버ID
-                    clrhanul@naver.com
-                    시작하기 | 쪽지 0 | 해피빈
-                    로그아웃
-                    메일 | 카페 | 블로그 | 페이
+                <section class="white-box user-profile-card">
+                    <div class="flex-v" style="display: grid; grid-template-columns: 1fr 4fr; padding: 10px;">
+                        <div class="img profile-img"></div>
+                        <div class="flex-h">
+                            <div class="flex-v" style="width: 100%; justify-content: space-between; align-items: flex-start">
+                                <div class="flex-h" style="align-items: flex-start; line-height: 110%;">
+                                    <div class="flex-v">
+                                        <b>맑은한울님</b> |
+                                        <a href="#" style="font-size: 14px;">네이버ID</a>
+                                    </div>                                     
+                                    <p style="font-size: 13px;">clrhanul@naver.com</p>
+                                </div>
+                                <div style="border: 1px solid lightgray; padding: 5px 10px; border-radius: 200px; font-size: 15px;">
+                                    <p>로그아웃</p>
+                                    <div class="img"></div>
+                                </div>
+                            </div>
+                            <div class="flex-v" style="width: 100%; justify-content: flex-start; font-size: 15px;">
+                                <div class="flex-v">
+                                    <div class="img"></div>
+                                    <p>시작하기</p>
+                                </div> |
+                                <p>쪽지 <span style="color: #0ece2e; font-weight: bold;">0</span></p> |
+                                <div>
+                                    해피빈
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-sc" style="background: rgb(247, 247, 247); align-items: center; font-size: 15px;">
+                        <p><b>메일</b></p> |
+                        <p><b>카페</b></p> | 
+                        <p><b>블로그</b></p> |
+                        <p><b>페이</b></p>
+                    </div>
                 </section>
                 <section class="side-ad first white-box">
                     <div class="ad-tag">

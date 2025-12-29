@@ -94,3 +94,38 @@ div.img.plus {
     background-position: -536px -232px;
     background-repeat: no-repeat;
 }
+.img.cloud {
+    width: 80px; height: 80px;
+    background-image: url("../images/icon_set_whether.png");
+    background-size: 600px;
+    background-position: 0px -160px;
+    background-repeat: no-repeat;
+}
+.img.small-cloud {
+    width: 40px; height: 40px;
+    background-image: url("../images/icon_set_whether.png");
+    background-size: 300px;
+    background-position: 0px -80px;
+    background-repeat: no-repeat;
+}
+.img.cloud-moon {
+    width: 40px; height: 40px;
+    background-image: url("../images/icon_set_whether.png");
+    background-size: 300px;
+    background-position: -80px -40px;
+    background-repeat: no-repeat;
+}
+.img.rain {
+    width: 40px; height: 40px;
+    background-image: url("../images/icon_set_whether.png");
+    background-size: 300px;
+    background-position: -80px -80px;
+    background-repeat: no-repeat;
+}
+div.img.temp {
+    width: 16px; height: 16px;
+    background-image: url("../images/icon_set_default.png");
+    background-size: 500px;
+    background-position: -25px -474px;
+    background-repeat: no-repeat;
+}

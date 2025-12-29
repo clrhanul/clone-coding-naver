@@ -170,3 +170,35 @@ aside {
 .left-button > div.img {
     transform: rotate(180deg);
 }
+
+/* 플로팅 버튼 */
+.floating-buttons {
+    display: flex; position: fixed;
+    right: 25px; bottom: 25px;
+    gap: 10px;
+}
+.floating-button {
+    display: flex;
+    width: 40px; height: 40px;
+    border-radius: 200px;
+    border: 1px solid lightgray;
+    box-shadow: 0 4px 5px 0 #aaa6;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+div.img.go-top {
+    width: 15px; height: 15px;
+    background-image: url('../images/icon_set_default.png');
+    background-repeat: no-repeat;
+    background-size: 450px;
+    background-position: -192px -322px;
+}
+div.img.settings {
+    width: 15px; height: 15px;
+    background-image: url('../images/icon_set_default.png');
+    background-repeat: no-repeat;
+    background-size: 450px;
+    background-position: -196px -170px;
+}
+/* ----- */
